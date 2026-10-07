@@ -2,6 +2,7 @@ node_modules/
 .vscode/
 *.log
 *.apk
+*.mp4
 build/
 .dart_tool/
 .pub-cache/
