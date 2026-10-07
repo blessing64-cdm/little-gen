@@ -1,0 +1,74 @@
+/* Parent Dashboard Professional Styles */
+
+.progress-row {
+    margin-bottom: 0.5rem;
+}
+
+.progress-label-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+
+.progress-label {
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.progress-percent {
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary), #06D6A0);
+    border-radius: 10px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* For different colors per subject */
+.fill-abc { background: linear-gradient(90deg, #118AB2, #87ceeb); }
+.fill-123 { background: linear-gradient(90deg, #EF476F, #FF9A9E); }
+.fill-colors { background: linear-gradient(90deg, #FFD166, #ffecb3); }
+
+.achievement-badge {
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    background: #f8f9fa;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.achievement-badge span {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #888;
+    margin-top: 2px;
+}
+
+#parent-achievements-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+
+#parent-achievements-scroll::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+}

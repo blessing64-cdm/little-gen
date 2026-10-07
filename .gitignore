@@ -1,0 +1,14 @@
+node_modules/
+.vscode/
+*.log
+*.apk
+build/
+.dart_tool/
+.pub-cache/
+.pub/
+android/app/build/
+android/.gradle/
+little_gen/build/
+little_gen/.dart_tool/
+little_gen/.pub-cache/
+little_gen/.pub/

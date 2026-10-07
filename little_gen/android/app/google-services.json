@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704775989036",
+    "project_id": "little-gen-abc",
+    "storage_bucket": "little-gen-abc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704775989036:android:f57cf31b3315becf692e89",
+        "android_client_info": {
+          "package_name": "com.example.little_gen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSUefhnBmJrGA8ZIrd8mrUOS6bGK5H55w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

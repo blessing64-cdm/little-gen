@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Little Gen - Learn & Play</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <!-- Magical Splash Screen -->
+        <div id="splash-view" class="screen splash-screen">
+            <div id="lottie-bg"></div>
+            
+            <!-- Tap to Play Overlay -->
+            <div id="tap-to-start" class="tap-overlay">
+                <div class="tap-content">
+                    <span class="tap-icon">✨</span>
+                    <span class="tap-text">Tap to Play!</span>
+                </div>
+            </div>
+
+            <!-- Magical Floating Elements removed -->
+
+            <div class="splash-content">
+                <div class="logo-container">
+                    <h1 class="app-title bubble-text">Little Gen</h1>
+                </div>
+                
+                <div class="mascot-container" id="dino-mascot">
+                    <img src="img/magical_dino_mascot.png" alt="Magical Dino" class="dino-img">
+                    <div class="sparkle-bits">
+                        <span class="bit">✨</span>
+                        <span class="bit">✨</span>
+                        <span class="bit">✨</span>
+                    </div>
+                </div>
+
+                <div class="magic-banner">
+                    <span class="banner-text">Magic Learning Time!</span>
+                </div>
+
+                <div class="magic-loader">
+                    <div class="magic-dot"></div>
+                    <div class="magic-dot"></div>
+                    <div class="magic-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

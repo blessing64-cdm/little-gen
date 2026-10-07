@@ -1,0 +1,119 @@
+/* Memory Game Styles */
+
+#memory-game-view {
+    background: #f0f7ff;
+    z-index: 100;
+}
+
+#memory-selection-view {
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+#memory-grid-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    perspective: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#memory-board {
+    display: grid;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    max-width: 500px; 
+    max-height: 100%; /* Important: don't let it exceed container */
+}
+
+.memory-cat-btn {
+    padding: 1rem 1.5rem !important;
+    font-size: 1.1rem !important;
+    border: 3px solid transparent !important;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.memory-cat-btn.active {
+    opacity: 1;
+    border-color: white !important;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.difficulty-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    border: 3px solid #ddd;
+    font-weight: 800;
+    cursor: pointer;
+    background: white;
+    color: #444;
+    transition: all 0.2s ease;
+}
+
+.difficulty-btn.active {
+    background: #EF476F;
+    color: white;
+    border-color: #ff85a2;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(239, 71, 111, 0.4);
+}
+
+/* Card Styles */
+.memory-card {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 180px; 
+}
+
+.memory-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.memory-card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.memory-card-front {
+    background: #fff;
+    transform: rotateY(180deg);
+    border: 3px solid var(--secondary);
+}
+
+.memory-card-back {
+    background: linear-gradient(135deg, #118AB2, #06D6A0);
+    border: 3px solid white;
+    color: white;
+    font-weight: 900;
+}
+
+/* Board Sizes - JS handles columns, but we can add constraints */
+.grid-hard {
+    gap: 6px !important; 
+}
+.grid-hard .memory-card-face {
+    border-radius: 8px;
+    border-width: 2px;
+}
